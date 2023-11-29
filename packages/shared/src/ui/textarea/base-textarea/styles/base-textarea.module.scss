@@ -1,0 +1,119 @@
+@import '../../../../assets/styles/mixins/mixins';
+
+.textarea {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input__label-wrapper {
+  display: flex;
+}
+
+.input__label-asterics {
+  color: var(--primary_80);
+  margin-left: 1px;
+
+  &--disabled {
+    color: var(--primary_60);
+  }
+}
+
+.textarea__label {
+  @include footnote-medium-12pt;
+
+  margin-bottom: 4px;
+  color: var(--grayscale_90);
+  word-break: break-word;
+
+  &--disabled {
+    color: var(--grayscale_70);
+  }
+}
+
+.textarea__field {
+  @include body-regular-14pt;
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  padding: 7px 12px;
+  border-radius: 20px;
+  background-color: var(--grayscale_00);
+  caret-color: var(--primary_90);
+  color: var(--grayscale_100);
+  border-color: var(--grayscale_60);
+  resize: none;
+
+  &:hover:not(:disabled, :focus) {
+    border-color: var(--grayscale_70);
+  }
+
+  &--error,
+  &--error:hover:not(:disabled, :focus) {
+    border-color: var(--additional_red);
+  }
+
+  &--error:focus,
+  &:focus {
+    border-color: var(--primary_90);
+  }
+
+  &--resizable {
+    resize: vertical;
+  }
+
+  &::placeholder {
+    @include body-regular-14pt;
+    color: var(--grayscale_80);
+  }
+
+  &:disabled {
+    border: 1px solid var(--grayscale_60);
+    color: var(--grayscale_70);
+    cursor: not-allowed;
+  }
+
+  &:disabled::placeholder {
+    color: var(--grayscale_70);
+  }
+}
+
+.textarea__bottom {
+  width: 100%;
+  margin-top: 2px;
+  color: var(--grayscale_90);
+}
+
+.textarea__caption {
+  @include footnote-medium-12pt;
+  align-self: flex-start;
+
+  word-break: break-word;
+
+  &--error {
+    color: var(--additional_red);
+  }
+
+  &--disabled {
+    color: var(--grayscale_70);
+  }
+}
+
+.textarea__counter {
+  @include footnote-medium-12pt;
+
+  position: absolute;
+  right: 11px;
+  bottom: 12px;
+  color: var(--grayscale_80);
+
+  &--error {
+    color: var(--additional_red);
+  }
+
+  &--disabled {
+    color: var(--grayscale_70);
+  }
+}

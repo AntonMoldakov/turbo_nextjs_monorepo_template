@@ -1,0 +1,63 @@
+// use root to set as default theme in storybook
+#storybook-docs,
+.theme-light {
+  --primary_100: #335dff;
+  --primary_90: #4268fb;
+  --primary_80: #6585ff;
+  --primary_70: #bfccff;
+  --primary_60: #cdd7ff;
+  --primary_50: #dce3ff;
+  --primary_40: #eef1ff;
+
+  --grayscale_100: #353535;
+  --grayscale_90: #6b7185;
+  --grayscale_80: #a1a5af;
+  --grayscale_70: #caced9;
+  --grayscale_60: #e6e9f0;
+  --grayscale_50: #f4f5f9;
+  --grayscale_00: #ffffff;
+
+  --yellow: #fee34b;
+  --yellow_light: #fee34b;
+
+  --additional_red: #e80606;
+
+  --additina-light_red: #ffaaaa;
+  --additinal_green: #55df49;
+  --additinal_light_green: #9ff297;
+  --additinal_pink: #ffcdf1;
+
+  --card_shadow: rgba(11, 22, 64, 0.5);
+  --card_shadow: rgba(28, 33, 45, 0.7);
+}
+
+.theme-dark {
+  --primary_100: #335dff;
+  --primary_90: #4268fb;
+  --primary_80: #6585ff;
+  --primary_70: #bfccff;
+  --primary_60: #cdd7ff;
+  --primary_50: #dce3ff;
+  --primary_40: #eef1ff;
+
+  --grayscale_100: #353535;
+  --grayscale_90: #6b7185;
+  --grayscale_80: #a1a5af;
+  --grayscale_70: #caced9;
+  --grayscale_60: #e6e9f0;
+  --grayscale_50: #f4f5f9;
+  --grayscale_00: #ffffff;
+
+  --yellow: #fee34b;
+  --yellow_light: #fee34b;
+
+  --additional_red: #e80606;
+
+  --additina_light_red: #ffaaaa;
+  --additinal_green: #55df49;
+  --additinal_light_green: #9ff297;
+  --additinal_pink: #ffcdf1;
+
+  --card_shadow: rgba(11, 22, 64, 0.5);
+  --card_shadow: rgba(28, 33, 45, 0.7);
+}

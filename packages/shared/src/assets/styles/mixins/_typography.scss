@@ -1,0 +1,27 @@
+@mixin header-bold-50pt {
+  @include font($size: 50px, $weight: 700, $lineHeight: 50px);
+}
+
+@mixin header-bold-28pt {
+  @include font($size: 28px, $weight: 700, $lineHeight: 35px);
+}
+
+@mixin header-bold-24pt {
+  @include font($size: 24px, $weight: 700, $lineHeight: 32px);
+}
+@mixin header-bold-16pt {
+  @include font($size: 16px, $weight: 700, $lineHeight: 20px);
+}
+@mixin header-bold-14pt {
+  @include font($size: 14px, $weight: 700, $lineHeight: 22px);
+}
+
+@mixin body-medium-14pt {
+  @include font($size: 14px, $weight: 500, $lineHeight: 22px);
+}
+@mixin body-regular-14pt {
+  @include font($size: 14px, $weight: 400, $lineHeight: 22px);
+}
+@mixin footnote-medium-12pt {
+  @include font($size: 12px, $weight: 500, $lineHeight: 16px);
+}

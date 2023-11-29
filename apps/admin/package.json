@@ -1,0 +1,29 @@
+{
+  "name": "admin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3001",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "format": "eslint --fix --ext .js,.jsx,.ts,.tsx .",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "14.0.2",
+    "react": "^18",
+    "react-dom": "^18",
+    "shared": "*"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^14.0.2",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint-config-custom": "*",
+    "lint-staged": "^15.0.1",
+    "tsconfig": "*",
+    "typescript": "^5"
+  }
+}

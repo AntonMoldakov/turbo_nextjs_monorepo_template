@@ -1,0 +1,19 @@
+{
+  "extends": "tsconfig/nextjs.json",
+  "compilerOptions": {
+    "plugins": [{ "name": "next" }],
+
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": ["src/1_app/*"],
+      "@processes/*": ["src/2_processes/*"],
+      "@pages/*": ["src/3_pages/*"],
+      "@widgets/*": ["src/4_widgets/*"],
+      "@features/*": ["src/5_features/*"],
+      "@entities/*": ["src/6_entities/*"],
+      "@shared/*": ["src/7_shared/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}

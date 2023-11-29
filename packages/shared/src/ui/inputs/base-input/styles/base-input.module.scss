@@ -1,0 +1,136 @@
+@import '../../../../assets/styles/mixins/mixins';
+
+.input {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.input__label-wrapper {
+  display: flex;
+}
+
+.input__label-asterics {
+  color: var(--primary_80);
+  margin-left: 1px;
+
+  &--disabled {
+    color: var(--primary_60);
+  }
+}
+
+.input__label {
+  @include body-regular-14pt;
+
+  margin-bottom: 4px;
+  color: var(--grayscale_90);
+
+  &--disabled {
+    color: var(--grayscale_70);
+  }
+}
+
+.input__outer {
+  --field-radius: 30px;
+  --input-padding-vertical: 7px 0;
+  --input-padding-horizontal: 0 12px;
+
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--input-padding-horizontal);
+  border: 1px solid var(--grayscale_60);
+  border-radius: var(--field-radius);
+  background-color: var(--grayscale_00);
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr auto;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover:not(.input__outer--disabled, .loading) {
+    border-color: var(--grayscale_70);
+  }
+
+  &--error,
+  &--error:hover:not(.input__outer--disabled, .loading) {
+    border-color: var(--additional_red);
+  }
+
+  &--error:focus-within:not(.input__outer--disabled, .loading),
+  &:focus-within:not(.input__outer--disabled, .loading) {
+    border-color: var(--primary_90);
+  }
+
+  &--disabled {
+    border: 1px solid var(--grayscale_60);
+    cursor: not-allowed;
+  }
+}
+
+.input__field {
+  @include body-regular-14pt;
+  position: relative;
+  padding: var(--input-padding-vertical);
+  background-color: var(--control-secondary);
+  caret-color: var(--primary_90);
+  color: var(--grayscale_100);
+
+  // content (left & right)
+  &--content-left {
+    margin-left: 8px;
+  }
+
+  &--content-right {
+    margin-right: 8px;
+  }
+
+  // states
+
+  &::placeholder {
+    @include body-regular-14pt;
+    color: var(--grayscale_80);
+  }
+
+  &:not(.loading):disabled {
+    color: var(--grayscale_70);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &:disabled::placeholder {
+    color: var(--grayscale_70);
+  }
+}
+
+.input-content-left {
+  &--disabled {
+    pointer-events: none;
+  }
+}
+
+.input-content-right {
+  &--disabled {
+    pointer-events: none;
+  }
+}
+
+.input__caption {
+  @include footnote-medium-12pt;
+  align-self: flex-start;
+  margin-top: 2px;
+  word-break: break-word;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
+  &--error {
+    color: var(--additional_red);
+  }
+}

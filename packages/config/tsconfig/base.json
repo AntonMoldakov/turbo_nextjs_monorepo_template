@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Default",
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es5",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "noImplicitAny": true,
+    "moduleDetection": "force",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "moduleResolution": "node",
+    "noEmit": true,
+    "lib": ["es2022", "dom", "dom.iterable"]
+  },
+  "exclude": ["node_modules"]
+}

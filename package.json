@@ -1,0 +1,47 @@
+{
+  "name": "erp-school",
+  "private": true,
+  "version": "1.0.0",
+  "repository": "git@gitlab.com:purrweb/erp-school/web.git",
+  "author": "AntonMoldakov <anton.moldakov@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "packages/config/*",
+    "packages/shared"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "packageManager": "yarn@1.22.17",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "turbo run format",
+    "postinstall": "husky install",
+    "type-check": "turbo run type-check",
+    "commit": "cz"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.8.0",
+    "@commitlint/config-conventional": "^17.8.0",
+    "@commitlint/config-lerna-scopes": "^17.7.0",
+    "@digitalroute/cz-conventional-changelog-for-jira": "^8.0.1",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-conventional-changelog-for-jira-smart-commits": "^1.0.5",
+    "eslint": "^8.53.0",
+    "husky": "^8.0.3",
+    "prettier": "^3.1.0",
+    "tsconfig": "*",
+    "turbo": "^1.10.16"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/@digitalroute/cz-conventional-changelog-for-jira",
+      "jiraPrefix": "ES",
+      "jiraOptional": true
+    }
+  }
+}
