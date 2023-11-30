@@ -1,14 +1,8 @@
-import type { SVGProps } from "react";
-import * as React from "react";
+import type { SVGProps } from 'react';
+import * as React from 'react';
 
-const SvgCalendar24: React.FC<SVGProps<SVGSVGElement>>  = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    fill="none"
-    height={24}
-    width={24}
-    xmlns="http://www.w3.org/2000/svg"
-    {...props}
-  >
+const SvgCalendar24 = (props: SVGProps<SVGSVGElement>) => (
+  <svg fill="none" height={24} width={24} xmlns="http://www.w3.org/2000/svg" {...props}>
     <path
       d="M8 2v3M16 2v3M3.5 9.09h17M21 8.5V17c0 3-1.5 5-5 5H8c-3.5 0-5-2-5-5V8.5c0-3 1.5-5 5-5h8c3.5 0 5 2 5 5"
       stroke="#353535"

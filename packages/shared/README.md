@@ -15,6 +15,10 @@ yarn storybook
 Deploy storybook with following command:
 
 ```
+yarn build-storybook
+```
+
+```
 yarn deploy-storybook
 ```
 

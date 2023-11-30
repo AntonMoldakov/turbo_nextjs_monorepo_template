@@ -1,0 +1,9 @@
+.dropdown-indicator {
+  padding: 12px;
+}
+
+.dropdown-indicator__icon {
+  &.open {
+    transform: rotate(180deg);
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../../../assets/styles/mixins/mixins';
+@import './mixin.scss';
+
+.button {
+  @include button-variant-styles;
+
+  position: relative;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: 0;
+  background: transparent;
+  padding: 15px 11px 15px 11px;
+  
+}
+
+.button--full-width {
+  width: 100%;
+}
+
+.button__loader {
+  svg{
+    width: 22px;
+    height: 22px;
+    fill: var(--primary_100);
+  }
+}
+
+
+.button__content {
+  display: flex;
+  align-items: center;
+}

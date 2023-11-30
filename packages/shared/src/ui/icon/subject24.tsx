@@ -1,14 +1,8 @@
-import type { SVGProps } from "react";
-import * as React from "react";
+import type { SVGProps } from 'react';
+import * as React from 'react';
 
-const SvgSubject24: React.FC<SVGProps<SVGSVGElement>>  = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    fill="none"
-    height={24}
-    width={24}
-    xmlns="http://www.w3.org/2000/svg"
-    {...props}
-  >
+const SvgSubject24 = (props: SVGProps<SVGSVGElement>) => (
+  <svg fill="none" height={24} width={24} xmlns="http://www.w3.org/2000/svg" {...props}>
     <path
       d="M8 22h8c4.02 0 4.74-1.61 4.95-3.57l.75-8C21.97 7.99 21.27 6 17 6H7c-4.27 0-4.97 1.99-4.7 4.43l.75 8C3.26 20.39 3.98 22 8 22M8 6v-.8C8 3.43 8 2 11.2 2h1.6C16 2 16 3.43 16 5.2V6"
       stroke="#292D32"

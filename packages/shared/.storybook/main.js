@@ -24,7 +24,7 @@ const config = {
       name: '@storybook/addon-styling',
       options: {
         sass: {
-          // Require your Sass preprocessor here
+         // Require your Sass preprocessor here
           implementation: require('sass'),
           includePaths: [resolve(__dirname, '../src/assets/styles')],
           prependData: (content, loaderContext) => {

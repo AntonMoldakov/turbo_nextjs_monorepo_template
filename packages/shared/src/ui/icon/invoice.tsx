@@ -1,17 +1,10 @@
-import type { SVGProps } from "react";
-import * as React from "react";
+import type { SVGProps } from 'react';
+import * as React from 'react';
 
-const SvgInvoice: React.FC<SVGProps<SVGSVGElement>>  = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    fill="none"
-    height={24}
-    width={24}
-    xmlns="http://www.w3.org/2000/svg"
-    {...props}
-  >
+export const SvgInvoice = (props: SVGProps<SVGSVGElement>) => (
+  <svg fill="none" height={24} width={24} xmlns="http://www.w3.org/2000/svg" {...props}>
     <path
       d="M21 7v10c0 3-1.5 5-5 5H8c-3.5 0-5-2-5-5V7c0-3 1.5-5 5-5h8c3.5 0 5 2 5 5"
-      stroke="#353535"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeMiterlimit={10}
@@ -19,7 +12,6 @@ const SvgInvoice: React.FC<SVGProps<SVGSVGElement>>  = (props: SVGProps<SVGSVGEl
     />
     <path
       d="M14.5 4.5v2c0 1.1.9 2 2 2h2M8 13h4M8 17h8"
-      stroke="#353535"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeMiterlimit={10}
@@ -27,4 +19,3 @@ const SvgInvoice: React.FC<SVGProps<SVGSVGElement>>  = (props: SVGProps<SVGSVGEl
     />
   </svg>
 );
-export default SvgInvoice;

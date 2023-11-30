@@ -1,0 +1,49 @@
+@import '../../../../assets/styles/mixins/mixins';
+@import './mixin.scss';
+
+.button {
+  @include body-medium-14pt;
+  @include button-variant-styles;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: 0;
+  background: transparent;
+  padding: 7px 24px 7px 24px;
+}
+
+.button--full-width {
+  width: 100%;
+}
+
+.button--large {
+  border-radius: 40px;
+}
+
+.button--medium {
+  border-radius: 40px;
+}
+
+.button--small {
+  border-radius: 40px;
+}
+
+.button__spinner {
+  position: absolute;
+  margin: auto;
+  color: #f4f5f9;
+  width: 30px;
+}
+
+.button__content {
+  display: flex;
+  align-items: center;
+
+  &.loading {
+    opacity: 0;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,83 @@
+@import '../../../../assets/styles/mixins/mixins';
+
+@mixin button-variant-styles {
+  &--iconbutton {
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--primary_50);
+    border-radius: 50%;
+
+    path {
+      stroke: var(--primary_100);
+    }
+
+    &:hover:not(:disabled) {
+      background-color: var(--grayscale_50);
+      border: 1px solid var(--primary_60);
+    }
+
+    &:active:not(:disabled) {
+      background-color: var(--primary_50);
+
+      path {
+        stroke: var(--primary_90);
+      }
+    }
+
+    &:focus:not(:disabled, :active) {
+      width: 42px;
+      height: 42px;
+      border: 3px solid var(--primary_60);
+    }
+
+    &:disabled:not(.loading) {
+      border: 1px solid var(--primary_50);
+
+      path {
+        stroke: var(--primary_50);
+      }
+    }
+  }
+
+  &--iconbuttonwhite {
+    width: 30px;
+    height: 30px;
+    background-color: var(--grayscale_00);
+    border-radius: 50%;
+    path {
+      stroke: var(--primary_90);
+    }
+
+    &:hover:not(:disabled) {
+      background-color: var(--grayscale_50);
+      path {
+        stroke: var(--primary_90);
+      }
+    }
+
+    &:active:not(:disabled) {
+      background-color: var(--grayscale_50);
+      path {
+        stroke: var(--primary_100);
+      }
+    }
+
+    &:focus:not(:disabled, :active) {
+      width: 33px;
+      height: 33px;
+      background-color: var(--grayscale_50);
+      border: 2px solid var(--primary_60);
+      path {
+        stroke: var(--primary_100);
+      }
+    }
+
+    &:disabled:not(.loading) {
+      background-color: var(--grayscale_60);
+      path {
+        stroke: var(--primary_60);
+        fill: var(--primary_60);
+      }
+    }
+  }
+}

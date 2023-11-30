@@ -1,0 +1,37 @@
+@import '../../../assets/styles/mixins/mixins.scss';
+
+.select {
+  &__label-wrapper {
+    display: flex;
+    margin-bottom: 4px;
+  }
+
+  &__label {
+    @include footnote-medium-12pt;
+
+    color: var(--grayscale_90);
+
+    &--disabled {
+      color: var(--grayscale_70);
+    }
+  }
+
+  &__asterisk {
+    @include footnote-medium-12pt;
+
+    margin-left: 1px;
+    color: var(--primary_90);
+    font-weight: 400;
+
+    &--disabled {
+      color: var(--grayscale_60);
+    }
+  }
+
+  &__error-text {
+    @include footnote-medium-12pt;
+
+    color: var(--additional_red);
+    margin-top: 2px;
+  }
+}

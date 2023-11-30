@@ -1,2 +1,7 @@
 public
 node_modules
+
+# api
+**/api-types.ts
+**/__generated__
+**/schema.graphql

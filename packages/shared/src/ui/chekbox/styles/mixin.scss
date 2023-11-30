@@ -1,0 +1,39 @@
+@import '../../../assets/styles/mixins/mixins.scss';
+
+@mixin checkbox-variant-styles {
+  &--checked_true {
+    background-color: var(--primary_90);
+    border-radius: 4px;
+
+    svg {
+      fill: var(--grayscale_00);
+    }
+
+    &:hover:not(:disabled) {
+      background-color: var(--primary_80);
+    }
+
+    &:active:not(:disabled) {
+      background-color: var(--primary_100);
+    }
+
+  }
+
+  &--checked_false {
+    border: 1px solid var(--grayscale_60);
+    border-radius: 4px;
+    svg {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+
+    &:hover:not(:disabled) {
+      border: 1px solid var(--primary_70);
+    }
+
+    &:active:not(:disabled) {
+      border: 1px solid var(--primary_80);
+    }
+  }
+}

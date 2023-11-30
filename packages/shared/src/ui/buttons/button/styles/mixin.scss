@@ -1,0 +1,66 @@
+@import '../../../../assets/styles/mixins/mixins';
+
+@mixin button-variant-styles {
+  &--primary {
+    background-color: var(--primary_90);
+    color: var(--grayscale_00);
+
+    svg {
+      fill: var(--grayscale_00);
+    }
+
+    &:hover:not(:disabled) {
+      background-color: var(--primary_80);
+    }
+
+    &:active:not(:disabled) {
+      background-color: var(--primary_100);
+    }
+
+    &:focus:not(:disabled, :active) {
+      background-color: var(--primary_100);
+      border: 3px solid var(--primary_60);
+    }
+
+    &:disabled:not(.loading) {
+      background-color: var(--grayscale_60);
+      color: var(--grayscale_80);
+    }
+  }
+
+  &--secondary {
+    svg {
+      fill: var(--primary_90);
+    }
+    background-color: var(--grayscale_00);
+    color: var(--primary_90);
+    border: 1px solid var(--primary_50);
+
+    &:hover:not(:disabled) {
+      background-color: var(--grayscale_50);
+      border: 1px solid var(--primary_60);
+    }
+
+    &:active:not(:disabled) {
+      background-color: var(--primary_50);
+      border: 1px solid var(--primary_50);
+    }
+
+    &:focus:not(:disabled, :active) {
+      background-color: var(--grayscale_50);
+      border: 3px solid var(--primary_50);
+    }
+
+    &:disabled:not(.loading) {
+      background-color: var(--grayscale_00);
+      color: var(--primary_60);
+      border: 1px solid var(--primary_50);
+    }
+  }
+
+  &__content--default-icon-color {
+    path {
+      stroke: currentColor;
+    }
+  }
+}

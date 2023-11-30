@@ -1,0 +1,35 @@
+@import '../../../../assets/styles/mixins/mixins';
+
+@mixin button-variant-styles {
+  &--iconbuttonelongated {
+    background-color: var(--primary_40);
+    svg{
+      width: 24px;
+      height: 24px;
+    }
+    path {
+      stroke: var(--primary_90);
+    }
+
+    &:hover:not(:disabled) {
+      background-color: var(--primary_50);
+    }
+
+    &:active:not(:disabled) {
+      background-color: var(--primary_60);
+    }
+
+    &:focus:not(:disabled, :active) {
+      background-color: var(--primary_40);
+      border: 2px solid var(--primary_90);
+    }
+
+    &:disabled:not(.loading) {
+      background-color: var(--grayscale_00);
+      border: 1px solid var(--primary_50);
+      path {
+        stroke: var(--primary_50);
+      }
+    }
+  }
+}

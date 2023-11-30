@@ -1,12 +1,11 @@
-import { forwardRef } from "react";
+'use client';
+import { forwardRef } from 'react';
 
-import type { BaseInputProps } from "../base-input/base-input";
-import { BaseInput } from "../base-input/base-input";
+import type { BaseInputProps } from '../base-input/base-input';
+import { BaseInput } from '../base-input/base-input';
 
-export const InputDefault = forwardRef<HTMLInputElement, BaseInputProps>(
-  (props, ref) => {
-    return <BaseInput {...props} ref={ref} />;
-  }
-);
+export const InputDefault = forwardRef<HTMLInputElement, BaseInputProps>((props, ref) => {
+  return <BaseInput {...props} ref={ref} />;
+});
 
 InputDefault.displayName = `InputDefault`;

@@ -1,0 +1,88 @@
+@import '../../../assets//styles/mixins//mixins.scss';
+@import './mixin.scss';
+
+.label_checkbox {
+  @include checkbox-variant-styles;
+  @include body-regular-14pt;
+
+ padding-left: 1.3em;
+  position: relative;
+  display: block;
+}
+
+.input_checkbox {
+    @include checkbox-variant-styles;
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.fakecheckbox {
+  @include checkbox-variant-styles;
+
+  width: 16px;
+  height: 16px;
+  margin-left: -1.3em;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.text{
+    color: var(--grayscale_100)
+
+}
+.text_disabled {
+    color: var(--grayscale_60)
+
+}
+.fakecheckbox--checked_true__disabled{
+    border-radius: 4px;
+    background-color: var(--grayscale_60);
+}
+
+.fakecheckbox--checked_false__disabled{
+    border-radius: 4px;
+    border: 1px solid var(--grayscale_60);
+    background-color: var(--grayscale_50);
+}
+// стили для галочки
+
+.tick_mark_none {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.tick_mark {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  display: inline-block;
+}
+
+.tick_mark::before {
+  height: 40%;
+  width: 1px;
+  position: absolute;
+  left: -23%;
+  top: 37%;
+  transform: translateX(10px) rotate(-45deg);
+  background-color: white;
+  content: '';
+  transform-origin: left bottom;
+}
+
+.tick_mark::after {
+  position: absolute;
+  left: -20%;
+  bottom: 25%;
+  height: 1px;
+  width: 70%;
+  background-color: white;
+  content: '';
+  transform: translateX(10px) rotate(-55deg);
+  transform-origin: left bottom;
+}

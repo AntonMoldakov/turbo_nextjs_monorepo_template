@@ -14,7 +14,6 @@ type GetRequestConfigCallback = (
 ) => RequestConfig | Promise<RequestConfig>;
 
 const requestConfig: GetRequestConfigCallback = getRequestConfig(async ({ locale }) => ({
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access -- import
   messages: (await import(`../public/locales/${locale}/index.ts`)).default,
 }));
 

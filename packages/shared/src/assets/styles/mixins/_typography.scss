@@ -16,11 +16,17 @@
   @include font($size: 14px, $weight: 700, $lineHeight: 22px);
 }
 
+@mixin body-medium-16pt {
+  @include font($size: 16px, $weight: 500, $lineHeight: 19px);
+}
 @mixin body-medium-14pt {
   @include font($size: 14px, $weight: 500, $lineHeight: 22px);
 }
 @mixin body-regular-14pt {
   @include font($size: 14px, $weight: 400, $lineHeight: 22px);
+}
+@mixin body-regular-16pt {
+  @include font($size: 16px, $weight: 400, $lineHeight: 20px);
 }
 @mixin footnote-medium-12pt {
   @include font($size: 12px, $weight: 500, $lineHeight: 16px);

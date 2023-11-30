@@ -1,14 +1,8 @@
-import type { SVGProps } from "react";
-import * as React from "react";
+import type { SVGProps } from 'react';
+import * as React from 'react';
 
-const SvgFolder20: React.FC<SVGProps<SVGSVGElement>>  = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    fill="none"
-    height={21}
-    width={21}
-    xmlns="http://www.w3.org/2000/svg"
-    {...props}
-  >
+const SvgFolder20 = (props: SVGProps<SVGSVGElement>) => (
+  <svg fill="none" height={21} width={21} xmlns="http://www.w3.org/2000/svg" {...props}>
     <path
       d="M16.779 3.945c.11.174-.079.376-.279.33a4.473 4.473 0 0 0-1.267-.175h-2.75a.417.417 0 0 1-.333-.166l-.958-1.276c-.118-.166-.007-.408.197-.408h2.294c1.301 0 2.447.676 3.096 1.695"
       fill="#A1A5AF"

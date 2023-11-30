@@ -1,0 +1,14 @@
+export { SvgBook } from './book';
+export { SvgBriefcase } from './briefcase';
+export { SvgCalendar1 } from './calendar1';
+export { SvgCalendar2 } from './calendar2';
+export { SvgDocumentText } from './document-text';
+export { SvgGalleryFavorite } from './gallery-favorite';
+export { SvgHome } from './home';
+export { SvgInvoice } from './invoice';
+export { SvgNote2 } from './note2';
+export { SvgNotification } from './notification';
+export { SvgProfile2User } from './profile2-user';
+export { SvgReceiptDisscount } from './receipt-disscount';
+export { SvgSetting2 } from './setting2';
+export { SvgTeacher } from './teacher';

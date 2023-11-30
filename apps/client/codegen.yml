@@ -1,0 +1,30 @@
+overwrite: true
+schema: ${BASE_API_URL}
+documents: 'src/**/*.{graphql,gql}'
+hooks:
+  afterAllFileWrite:
+    - prettier --write
+generates:
+  src/7_shared/types/api-types.ts:
+    plugins:
+      - 'typescript'
+  src/:
+    preset: near-operation-file
+    presetConfig:
+      folder: __generated__
+      extension: .tsx
+      baseTypesPath: 7_shared/types/api-types.ts
+    plugins:
+      - typescript-operations
+      - typescript-react-apollo
+    config:
+      documentMode: 'documentNodeImportFragments'
+      namingConvention:
+        enumValues: keep
+      nonOptionalTypename: true
+      dedupeOperationSuffix: true
+      omitOperationSuffix: true
+      withHooks: true
+      withComponent: false
+      withHOC: false
+      reactApolloVersion: 3

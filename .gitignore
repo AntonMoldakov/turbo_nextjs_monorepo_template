@@ -42,3 +42,20 @@ build-storybook.log
 
 # ts
 tsconfig.tsbuildinfo
+
+# api
+**/api-types.ts
+**/__generated__
+**/schema.graphql
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+.cxx/
+*.keystore
+!debug.keystore

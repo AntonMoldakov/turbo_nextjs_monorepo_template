@@ -12,7 +12,13 @@ enum CaptionClasses {
   DEFAULT = 'default',
 }
 
-export const getCaptionOptions = ({ isError, isSuccess, errorMessage, successMessage, captionMessage }: Params) => {
+export const getCaptionOptions = ({
+  isError,
+  isSuccess,
+  errorMessage,
+  successMessage,
+  captionMessage,
+}: Params) => {
   switch (true) {
     case isError:
       return {

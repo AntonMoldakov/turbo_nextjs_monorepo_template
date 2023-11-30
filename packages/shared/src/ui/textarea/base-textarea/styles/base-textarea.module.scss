@@ -15,6 +15,10 @@
 .input__label-asterics {
   color: var(--primary_80);
   margin-left: 1px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
 
   &--disabled {
     color: var(--primary_60);
@@ -55,9 +59,12 @@
     border-color: var(--additional_red);
   }
 
-  &--error:focus,
   &:focus {
     border-color: var(--primary_90);
+  }
+
+  &--error:focus {
+    border-color: var(--additional_red);
   }
 
   &--resizable {
